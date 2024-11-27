@@ -8,26 +8,68 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 20px 0;
-    text-align: center;
+    
 }
 .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+
 }
+.nav-bar{
+    width: 100%;
+}
+.nav>.nav-bar>.logo{
+    width: 8%;
+    align-self: center;
+    border: 1px  solid blue;
+} .logo-area{
+    margin-left: 25px;
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+}
+.nav>.nav-bar>.logo-area>.logo img{
+    border-radius: 25px;
+      }
+
+/*making nav bar static*/
+header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 12, 12); 
+    z-index: 1000; 
+}
+
+
 .logo img {
     height: 50px;
     width: auto;
+
 }
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-}
-.logo p {
-    margin: 0;
-    font-size: 14px;
-}
+ .log-cont{
+    width: 40%;
+    border: 1px solid green;
+
+ }
+ .menu{
+    display: flex;
+    gap: 2rem;
+    border: 2px solid blue;
+    width: 30%;
+    list-style: none;
+    align-content: center;
+ }
+ 
 .menu ul {
     list-style: none;
     margin: 0;
