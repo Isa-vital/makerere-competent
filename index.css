@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 /*header {
@@ -19,6 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #1968df;
+    box-shadow: 3px 3px 5px rgba(0, 0.1, 0.2, 0.4);
     
 
    
@@ -33,6 +35,9 @@ body {
 .nav-bar {
     display: flex;
     align-items: center;
+}
+.nav-links{
+    display: none;
 }
 
 .logo-area {
@@ -90,6 +95,73 @@ main{
 
     
 }
+.menu-icon {
+    display: none; /* Hide by default */
+}
+
+/* Show the menu icon on smaller screens */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #000; /* Adjust color as needed */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on smaller screens */
+    }
+
+    .nav-links.open {
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 100px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+    .nav-links.open li a:hover{
+        background-color: #00529b;
+        color: whitesmoke;
+        border-radius: 5px;
+        padding-left: 10px 10px;
+    }
+    .nav-links{
+        color: #1968df;
+       
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-weight: bolder;
+        list-style: none;
+        
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color: #1968df;
+        padding: 5%;
+       
+    
+    }
+    .nav-links ul li a:hover {
+        background-color: #4a63ee;
+        color: antiquewhite;
+        cursor: pointer;
+    }
+    
+    
+
+}
 
 .welcome {
     
@@ -105,6 +177,8 @@ main{
     width: 100%;
     height: 100%;
     background: url('banner1.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
     animation: carousel 15s infinite;
 }
 .banner-text {
