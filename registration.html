@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makerere Competent High School</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/baa1ef169a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-bar">
+                <div class="logo-area">
+                    <div class="logo">
+                        <img src="competentlogo.jpeg" alt="logo">
+                    </div>
+                    <div class="log-cont">
+                        <h1>Makerere Competent High School</h1>
+                        <p>Quality Education for A Better Future</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="index.html" target="blank">Home</a></li>
+                    <li><a href="about.html" target="blank">e-School</a></li>
+                    <li><a href="courses.html" target="blank">Admissions</a></li>
+                    <li><a href="news.html" target="blank">News</a></li>
+                    <li><a href="news.html" target="blank">Alumni</a></li>
+                    <li><a href="contact.html" target="blank">Contact Us</a></li>
+                </ul>
+            </div>
+            <nav>
+                <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" target="blank">Home</a></li>
+                        <li class="active"><a href="about.html" target="blank">e-School</a></li>
+                        <li><a href="courses.html" target="blank">Admissions</a></li>
+                        <li><a href="news.html" target="blank">News</a></li>
+                        <li><a href="news.html" target="blank">Alumni</a></li>
+                        <li><a href="contact.html" target="blank">Contact Us</a></li>
+                </ul>
+                <script src="script.js"></script>
+            </nav>
+        </div>
+        
+    </header>
+
+        <div class="admission-page">
+           
+    
+            <form class="admission-form" action="#" method="post">
+                <!-- Student Details Section -->
+
+                <h2 class="form-title">Student Admission Form</h2>
+                <fieldset>
+                    <legend class="student-details">Student Details</legend>
+
+                 <div class="form-elements">
+    
+                    <label for="student-name">Student Name:</label><br>
+                    <input type="text" id="student-name" name="student-name" placeholder="Enter full name" required><br>
+
+
+    
+                 </div>
+                 <label for="phone-number">Contact Number</label>
+                 <div class="phone-number">
+                    <span class="country-code">+256</span>
+                    <input 
+                    type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="7xxxxxxxx" required>
+                    
+                 </div>
+                 <label for="email">Email (Optional)</label>
+                 <input type="email" id="email">
+                 <div class="form-elements">
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                 </div>
+                 <br>
+                 
+                 <div class="form-elements">
+                 <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="12" max="24" placeholder="Enter age" required>
+                </div>
+                <br>
+                <div class="form-elements">
+                    <label for="education-level">Former Education Level:</label>
+                    <input type="text" id="education-level" name="education-level" placeholder="e.g., Primary, Junior High" required><br>
+                </div>
+                <div class="form-elements">
+                    <label for="former-school">Former School:</label>
+                    <input type="text" id="former-school" name="former-school" placeholder="Enter former school name" required><br>
+                </div>
+
+                <div class="form-elements">
+                    <label for="grade-attained">Grade Attained:</label>
+                    <input type="text" id="grade-attained" name="grade-attained" placeholder="Enter grade attained" required><br>
+                </div>
+                <label for="pdf">Upload Previous Sch Results</label>
+                <input type="file" id="pdf"required><br>
+                <small>Only PDF formats accepted</small>
+
+                </fieldset>
+                    <br>
+    
+                <!-- Parent / Guardian Details Section -->
+                <fieldset>
+                    <legend>Parent / Guardian's Details</legend>
+    
+                    <div class="form-elements">
+                    <label for="parent-name">Parent / Guardian Name:</label>
+                    <input type="text" id="parent-name" name="parent-name" placeholder="Enter full name" required>
+                    </div>
+                    <br>
+
+                    <div class="form-elements">
+                    <label for="residence">Place of Residence:</label>
+                    <input type="text" id="residence" name="residence" placeholder="Enter place of residence" required><br>
+                    </div>
+
+                    <div class="form-elements">
+                    <label for="contact">Contact:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required><br>
+                    </div>
+
+                    <div class="form-elements">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                    </div>
+                    
+                    <br>
+                </fieldset>
+                    <br>
+    
+                <!-- Next of Kin Details Section -->
+                <fieldset>
+                    <legend>Next of Kin Details</legend>
+                    <div class="form-elements">
+                    <label for="kin-name">Name:</label>
+                    <input type="text" id="kin-name" name="kin-name" placeholder="Enter next of kin name" required><br>
+                    </div>
+
+                    <div class="form-elements">
+                    <label for="kin-contact">Contact:</label>
+                    <input type="tel" id="kin-contact" name="kin-contact" placeholder="Enter contact" required><br>
+                    </div>
+
+                    <div class="form-elements">
+                    <label for="kin-relationship">Relationship:</label>
+                    <input type="text" id="kin-relationship" name="kin-relationship" placeholder="Enter relationship" required><br>
+                    </div>
+
+                    <div class="form-elements">
+                    <label for="kin-residence">Place of Residence:</label>
+                    <input type="text" id="kin-residence" name="kin-residence" placeholder="Enter place of residence" required>
+                    </div>
+                    
+                    <br>
+                </fieldset>
+                    <br>
+    
+                <button class="form-btn">Submit Application Form</button>
+<br>                <p>NB: Please note that you will be required to present your previos results documents physically on reporting day.<br>
+    Thank you for chosing Makerere Competent High School</p>
+            </form>
+        </div>
+        <div>
+            
+        </div>
+
+
+
+
+
+        </main>
+
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Fees Structure</a></li>
+                        <li><a href="#">School Calender</a></li>
+                        <li><a href="#">FAQs & Help</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section contact-info">
+                    <h3>Reach Us On</h3>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>7KM along Hoima- Fort Rd<br>Buhimba</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>+256 0000000000</span>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+256 0000000000</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>info@macohs.ac.ug</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-section gallery">
+                    <h3>Gallery</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="competentlogo.jpeg" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="vital2.jpg" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gate.jpeg" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="gate.jpeg" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="microscope.jpg" alt="Gallery Image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="competentlogo.jpeg" alt="Gallery Image">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to get all information updates about our school direct to your email</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <div>© 2024 Makerere Competent High School. All Right Reserved.</div>
+                <div class="bottom-links">
+                    <a href="#"> Designed By @Isaac Vital</a>
+                   
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </body>
+    </html>
