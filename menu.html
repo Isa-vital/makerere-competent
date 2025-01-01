@@ -1,0 +1,140 @@
+/*css about events and blogs*/
+.blog-section{
+    width: 95%;
+
+}
+.blog-section .section-content-blog{
+    width: 85%;
+    margin: 20px auto;
+
+}
+.blog-section .section-content-blog .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+
+}
+.blog-section .section-content-blog .cards .card{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 2px 1px;
+    
+
+
+}
+.blog-section .section-content-blog .cards .card img{
+    width: 100%;
+    height: auto;
+
+}
+.blog-section .section-content-blog .cards .card .article{
+    padding: 15px 20px;
+}
+.blog-section .section-content-blog .cards .card .article h4{
+    font-size: 24px;
+    color: #4a4a4a;
+    
+}
+.blog-section .section-content-blog .cards .card .article p{
+    font-size: 15px;
+    margin: 10px 0px;
+    color: #6a6a6a;
+    
+}
+.blog-section .section-content-blog .cards .card a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #25c5c5;
+    padding: 3px 3px;
+    margin-left: 20px ;
+    color: white;
+    border-radius: 3px;
+}
+.blog-section .section-content-blog .cards .card .posted-date{
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #25c5c5;
+    padding: 2px 7px;
+    
+}
+@media screen and (max-width: 768px){
+    .blog-section .section-content-blog .cards{
+        
+        grid-template-columns: 1fr;
+        
+    }    
+}
+
+
+
+
+
+
+
+<div class="blog-section">
+    <div class="section-content-blog">
+        <div class="title">
+            <h2>Events and Blogs</h2>
+            <p>Get exclusive News and Events about our school</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="image-section">
+                    <img src="gate.jpeg">
+                </div>
+                <div class="article">
+                    <h4>Title one</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit aut, ullam tempora earum culpa sed provident veniam voluptate deserunt quis atque corrupti! Modi adipisci quis magni possimus repudiandae facere?</p>
+                
+                </div>
+                <div class="blog-view">
+                    <a href="#" class="button">Read More</a>
+                </div>
+                <div class="posted-date">
+                    <p>posted on 12 August 2024</p>
+                </div>
+            </div>
+           <!-----card 2-->
+           <div class="card">
+            <div class="image-section">
+                <img src="gate.jpeg">
+            </div>
+            <div class="article">
+                <h4>Title one</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit aut, ullam tempora earum culpa sed provident veniam voluptate deserunt quis atque corrupti! Modi adipisci quis magni possimus repudiandae facere?</p>
+            
+            </div>
+            <div class="blog-view">
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="posted-date">
+                <p>posted on 12 August 2024</p>
+            </div>
+        </div>
+
+        <!----card 3-->
+        <div class="card">
+            <div class="image-section">
+                <img src="gate.jpeg">
+            </div>
+            <div class="article">
+                <h4>Title one</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit aut, ullam tempora earum culpa sed provident veniam voluptate deserunt quis atque corrupti! Modi adipisci quis magni possimus repudiandae facere?</p>
+            
+            </div>
+            <div class="blog-view">
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="posted-date">
+                <p>posted on 12 August 2024</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
